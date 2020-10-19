@@ -1,0 +1,11 @@
+public Gimage frog = new GImage("frog.jpg");
+public static final int SQSIZE = 75, NCOLS = 7, NROWS = 3, GRAVITY = 10;
+public int jump;
+public void run() {
+addMouseListeners();
+question(); }
+
+public void question(){
+frog.setLocation(SQSIZE * (NCOLS / 2), SQSIZE * (NROWS -1));
+add(frog);
+}
